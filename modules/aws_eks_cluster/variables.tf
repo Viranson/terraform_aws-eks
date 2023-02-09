@@ -3,11 +3,6 @@ variable "eks_cluster_name" {
   description = "Amazon EKS cluster name"
 }
 
-variable "node_group_name" {
-  type        = string
-  description = "Amazon EKS Node Group name"
-}
-
 variable "vpc_subnet_ids" {
   type        = list(any)
   description = "List of Amazon Subnets IDs for EKS cluster"

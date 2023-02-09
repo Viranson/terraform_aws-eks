@@ -4,7 +4,7 @@ variable "aws_vpc_subnet_id" {
 }
 
 variable "vpc_natgw_tags" {
-  type        = string
+  type        = map(any)
   description = "AWS VPC NAT Gateway Resource TAGS"
 }
 

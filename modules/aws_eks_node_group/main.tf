@@ -3,7 +3,7 @@ resource "aws_eks_node_group" "example" {
   node_group_name = var.node_group_name
   node_role_arn   = aws_iam_role.prod_eks_node_group_iam_role.arn
   subnet_ids      = var.vpc_subnet_ids
-  instance_type   = var.eks_node_group_instance_types
+  instance_types  = var.eks_node_group_instance_types
   tags            = var.aws_eks_node_group_tags
 
   scaling_config {

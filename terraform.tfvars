@@ -31,9 +31,9 @@ vpc_subnets_profile = {
   }
 
   private-us-east-1a = {
-    vpc_name          = "prod-vpc01"
-    az                = "us-east-1a"
-    subnet_cidr_block = "10.0.0.0/24"
+    vpc_name               = "prod-vpc01"
+    az                     = "us-east-1a"
+    subnet_ipv4_cidr_block = "10.0.0.0/24"
     vpc_subnet_tags = {
       Name = "private-us-east-1a-prod"
     }
@@ -52,13 +52,13 @@ vpc_subnets_profile = {
 vpc_nat_eip_profile = {
   prod-vpc01-natgw_eip_01 = {
     vpc_name = "prod-vpc01"
-    aws_natgw_tags = {
+    aws_nat_eip_tags = {
       Name = "prod-vpc01-natgw-eip"
     }
   }
   prod-vpc01-natgw_eip_02 = {
     vpc_name = "prod-vpc01"
-    aws_natgw_tags = {
+    aws_nat_eip_tags = {
       Name = "prod-vpc01-natgw-eip"
     }
   }
